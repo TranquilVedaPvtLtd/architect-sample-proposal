@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Statement of Work - Studio Command Centre for Aravali Studio Architects | Jarvis Daily</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', system-ui, sans-serif; color: #1A2535; background: #fff; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+  .page { max-width: 900px; margin: 0 auto; padding: 40px; }
+
+  /* Header */
+  .header { background: linear-gradient(135deg, #C49A2A 0%, #A07D1C 100%); color: #fff; padding: 36px 40px; display: flex; justify-content: space-between; align-items: start; border-radius: 8px 8px 0 0; }
+  .header h1 { font-size: 26px; font-weight: 800; letter-spacing: -0.5px; }
+  .header .tagline { font-size: 13px; opacity: 0.9; margin-top: 2px; }
+  .header .doc-type { text-align: right; }
+  .header .doc-type h2 { font-size: 14px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+  .header .doc-type p { font-size: 12px; opacity: 0.9; margin-top: 3px; }
+
+  .section { margin: 2.5rem 0; }
+  .section-num { font-size: 11px; font-weight: 700; color: #C49A2A; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 6px; }
+  .section h2 { font-size: 20px; font-weight: 800; margin-bottom: 12px; color: #1A2535; }
+  .section h3 { font-size: 16px; font-weight: 700; margin: 1.5rem 0 0.75rem; color: #1A2535; }
+  .section p, .section li { font-size: 14px; color: #4A5568; }
+  .section ul, .section ol { padding-left: 1.5rem; margin: 0.5rem 0; }
+  .section li { margin-bottom: 4px; }
+
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 13px; }
+  thead { background: #FBF7EE; }
+  th { text-align: left; padding: 10px 12px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #666; font-weight: 700; border-bottom: 2px solid #E8DCC4; }
+  td { padding: 10px 12px; border-bottom: 1px solid #f0f0f0; color: #4A5568; vertical-align: top; }
+  tbody tr:hover { background: #FDFAF3; }
+  .priority-high { color: #C49A2A; font-weight: 600; }
+  .priority-medium { color: #666; font-weight: 500; }
+
+  .milestone { background: #FDFAF3; border: 1px solid #E8DCC4; border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+  .milestone-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+  .milestone-title { font-size: 16px; font-weight: 700; color: #1A2535; }
+  .milestone-tag { background: #C49A2A; color: #fff; font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 4px; }
+  .milestone-meta { display: flex; gap: 2rem; font-size: 12px; color: #666; margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid #E8DCC4; flex-wrap: wrap; }
+  .milestone-meta strong { color: #C49A2A; }
+  .deliverables { list-style: none; padding: 0; }
+  .deliverables li { padding: 4px 0 4px 1.2rem; position: relative; font-size: 13px; color: #4A5568; }
+  .deliverables li::before { content: ''; position: absolute; left: 0; top: 12px; width: 6px; height: 6px; background: #C49A2A; border-radius: 50%; }
+  .acceptance { background: #fff; border: 1px solid #E8DCC4; border-radius: 6px; padding: 1rem; margin-top: 1rem; }
+  .acceptance-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #999; margin-bottom: 8px; }
+  .acceptance li { font-size: 12px; color: #4A5568; padding: 3px 0; }
+
+  .payment-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; margin: 1.5rem 0; }
+  .payment-card { background: #FDFAF3; border: 1px solid #E8DCC4; border-radius: 8px; padding: 1.1rem 0.9rem; text-align: center; }
+  .payment-card.active { border-color: #C49A2A; background: #FFF8E1; }
+  .payment-pct { font-size: 12px; font-weight: 700; color: #C49A2A; margin-bottom: 4px; }
+  .payment-amt { font-size: 20px; font-weight: 800; color: #1A2535; }
+  .payment-gst { font-size: 11px; color: #999; margin-top: 2px; }
+  .payment-when { font-size: 11px; color: #666; margin-top: 8px; line-height: 1.5; }
+
+  .timeline-bar { display: flex; gap: 4px; margin: 1rem 0; height: 32px; border-radius: 6px; overflow: hidden; }
+  .timeline-segment { display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #fff; letter-spacing: 0.5px; }
+  .seg-1 { background: #C49A2A; flex: 1; }
+  .seg-2 { background: #A07D1C; flex: 2; }
+  .seg-3 { background: #7D5F15; flex: 1; }
+  .seg-4 { background: #5A440F; flex: 3; }
+
+  .note-card { background: #F8FAFC; border-left: 3px solid #C49A2A; border-radius: 0 6px 6px 0; padding: 1rem 1.25rem; margin: 1rem 0; }
+  .note-card strong { font-size: 13px; color: #1A2535; }
+  .note-card p { font-size: 13px; color: #4A5568; margin-top: 4px; }
+
+  .sig-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 1.5rem 0; }
+  .sig-block { border: 1px solid #E8DCC4; border-radius: 8px; padding: 1.5rem; }
+  .sig-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #999; margin-bottom: 8px; }
+  .sig-name { font-size: 16px; font-weight: 700; color: #C49A2A; margin-bottom: 4px; }
+  .sig-detail { font-size: 12px; color: #666; line-height: 1.8; }
+  .sig-line { border-top: 1px solid #ccc; margin-top: 2rem; padding-top: 6px; font-size: 11px; color: #999; }
+
+  .ip-block { background: #FDFAF3; border: 1px solid #E8DCC4; border-radius: 8px; padding: 1.5rem; margin: 1rem 0; }
+  .ip-block h3 { color: #C49A2A; }
+  .ip-block p { margin-top: 0.5rem; font-size: 13.5px; }
+
+  .footer { text-align: center; padding: 2rem 0; font-size: 11px; color: #999; border-top: 1px solid #eee; margin-top: 2rem; }
+
+  @media print { body { padding: 0; } .page { padding: 20px; } .header { border-radius: 0; } }
+  @media (max-width: 600px) { .payment-grid { grid-template-columns: 1fr; } .sig-grid { grid-template-columns: 1fr; } .header { flex-direction: column; gap: 1rem; } .milestone-meta { flex-direction: column; gap: 0.5rem; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div>
+      <h1>Jarvis Daily</h1>
+      <div class="tagline">Tranquil Veda Private Limited - Pune, Maharashtra</div>
+    </div>
+    <div class="doc-type">
+      <h2>Statement of Work</h2>
+      <p>Studio Command Centre for Aravali Studio Architects</p>
+      <p>SOW-ARV-001 Rev. 1 | 13 June 2026</p>
+    </div>
+  </div>
+
+  <!-- 1. PROJECT OVERVIEW -->
+  <div class="section">
+    <div class="section-num">Section 1</div>
+    <h2>Project Overview</h2>
+    <p>Jarvis Daily ("Service Provider", a unit of Tranquil Veda Private Limited, GSTIN 27AAHCT6956C1Z3, SAC 998314) will deploy a private, production-ready instance of the Studio Command Centre for Aravali Studio Architects ("Client", Pune), configured around Aravali Studio's own templates, rate library, project schema and brand. Through this engagement Aravali Studio will:</p>
+    <ul>
+      <li>Generate AI-drafted client proposals in Aravali Studio's firm voice, typically in under 10 minutes from a 2-minute brief</li>
+      <li>Edit any drafted proposal in natural language (English, Marathi or Hindi), with a visible diff per edit and rollback before send</li>
+      <li>Ship every proposal as a cinematic mini-website on Aravali Studio's subdomain with a one-click PDF export and an in-page "Call Anjali" CTA</li>
+      <li>Run the studio's daily standup on a WhatsApp team surface that replaces the verbal 2pm and 4pm rounds, with audit-trailed updates from designers, site-visit voice drops, and a 3D moodboard pinboard</li>
+      <li>Track BOQ versions, milestone payments, contractor outflows and project cashflow in a single screen per project and a rollup across the studio</li>
+      <li>Retain full ownership and export rights over every proposal, BOQ revision, client record and audit log; weekly Excel export to Google Drive is automatic</li>
+      <li>Maintain an immutable audit trail of every BOQ, proposal and payment change retained for 8 years, satisfying MCA Rule 3 of the Companies Amendment Rules 2022</li>
+    </ul>
+    <p style="margin-top:0.75rem;">The system is hosted on managed infrastructure procured and maintained by Jarvis Daily on Aravali Studio's behalf. Build duration is <strong>7 calendar weeks from kickoff</strong> (4 build + 3 hypercare), followed by <strong>30 days of daily-check-in hypercare</strong> and a 12-month support retainer commencing per Section 5.5.</p>
+  </div>
+
+  <!-- 2. USER STORIES -->
+  <div class="section">
+    <div class="section-num">Section 2</div>
+    <h2>User Stories</h2>
+
+    <h3>Module 1: AI Proposal Drafting</h3>
+    <table>
+      <thead><tr><th>ID</th><th>User Story</th><th>Priority</th></tr></thead>
+      <tbody>
+        <tr><td>US-01</td><td>As the <strong>Principal Architect</strong>, I can request a new proposal for a client by selecting a project type and entering a 6-field brief, and receive a full first draft within 90 seconds in Aravali Studio's firm voice.</td><td class="priority-high">High</td></tr>
+        <tr><td>US-02</td><td>As the <strong>Principal Architect</strong>, the AI's draft uses Aravali Studio's rate library with current GST tagging (SAC 998391 for design services, SAC 9954 for site execution, HSN 9403 for furniture) applied to every line item.</td><td class="priority-high">High</td></tr>
+        <tr><td>US-03</td><td>As a <strong>proposal reviewer</strong>, I see a confidence score on every line item, with deviations beyond 10% from Aravali Studio's historical patterns visually flagged for review.</td><td class="priority-high">High</td></tr>
+        <tr><td>US-04</td><td>As the <strong>Principal Architect</strong>, the proposal is generated as a single integrated cinematic website (Profile + Scope + Estimated Cost in one shareable URL), not three separate documents.</td><td class="priority-high">High</td></tr>
+        <tr><td>US-05</td><td>As an <strong>admin</strong>, I can update the firm's profile, rate library, or sample proposals, and the AI reflects those changes in all subsequent drafts within one hour.</td><td class="priority-medium">Medium</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Module 2: Natural-Language Chat Editor</h3>
+    <table>
+      <thead><tr><th>ID</th><th>User Story</th><th>Priority</th></tr></thead>
+      <tbody>
+        <tr><td>US-06</td><td>As an <strong>authorised user</strong>, I can direct the AI in plain English, Marathi or Hindi to modify any drafted proposal ("change Kitchen budget to 8 lakhs, add Italian Carrara marble note, push timeline to 5 months") and the change is applied within seconds.</td><td class="priority-high">High</td></tr>
+        <tr><td>US-07</td><td>As an <strong>authorised user</strong>, every chat edit shows a visible diff so I can see exactly what changed before accepting.</td><td class="priority-high">High</td></tr>
+        <tr><td>US-08</td><td>As an <strong>authorised user</strong>, I can roll back any chat edit at any time before sending the proposal.</td><td class="priority-high">High</td></tr>
+        <tr><td>US-09</td><td>As an <strong>admin</strong>, every chat edit is logged to the immutable audit trail with author, timestamp, and before/after snapshots.</td><td class="priority-high">High</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Module 3: Showcase Output, Sign-Off Portal and Send</h3>
+    <table>
+      <thead><tr><th>ID</th><th>User Story</th><th>Priority</th></tr></thead>
+      <tbody>
+        <tr><td>US-10</td><td>As the <strong>Principal Architect</strong>, no proposal can be sent to a client until I or another authorised approver explicitly signs off; the system enforces a hard human sign-off gate.</td><td class="priority-high">High</td></tr>
+        <tr><td>US-11</td><td>As a <strong>client recipient</strong>, I receive a shareable cinematic website at a unique URL on the Aravali Studio subdomain (e.g., <em>proposal.aravali.studio/&lt;client-slug&gt;</em>), with a one-click PDF export available.</td><td class="priority-high">High</td></tr>
+        <tr><td>US-12</td><td>As a <strong>client recipient</strong>, I can approve any individual section of the proposal (kitchen approved, bedroom revisit needed) on the Client Sign-Off Portal; partial approvals are logged with timestamps.</td><td class="priority-high">High</td></tr>
+        <tr><td>US-13</td><td>As an <strong>authorised user</strong>, once a proposal is approved I can send it to the client via WhatsApp from within the system, with email as a fallback channel.</td><td class="priority-high">High</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Module 4: Studio Operations, Site Drops and Moodboard</h3>
+    <table>
+      <thead><tr><th>ID</th><th>User Story</th><th>Priority</th></tr></thead>
+      <tbody>
+        <tr><td>US-14</td><td>As a <strong>designer at site</strong>, I can speak into the phone after a site visit and have the audio auto-transcribed, auto-tagged to the project, and posted to the studio feed before I am back in the studio.</td><td class="priority-high">High</td></tr>
+        <tr><td>US-15</td><td>As a <strong>designer</strong>, I can drag image references from Pinterest, Instagram or local files into the 3D Moodboard Pinboard, auto-attributed to the right project.</td><td class="priority-medium">Medium</td></tr>
+        <tr><td>US-16</td><td>As a <strong>project manager</strong>, I see one feed of designer updates per project per day, replacing the verbal 2pm and 4pm standup.</td><td class="priority-high">High</td></tr>
+        <tr><td>US-17</td><td>As a <strong>contractor</strong>, I receive WhatsApp-native payment confirmations and milestone notifications without installing any app.</td><td class="priority-medium">Medium</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Module 5: Admin, Export, Compliance and Audit</h3>
+    <table>
+      <thead><tr><th>ID</th><th>User Story</th><th>Priority</th></tr></thead>
+      <tbody>
+        <tr><td>US-18</td><td>As an <strong>admin</strong>, I can view, search and export every proposal, every BOQ revision, every payment record and every audit log entry at any time, in CSV or JSON format.</td><td class="priority-high">High</td></tr>
+        <tr><td>US-19</td><td>As an <strong>admin</strong>, an automated weekly export of all proposals, BOQs, the rate library, contractor payment records and the audit log is delivered to Aravali Studio's Google Drive.</td><td class="priority-high">High</td></tr>
+        <tr><td>US-20</td><td>As a <strong>compliance reviewer</strong>, the audit trail is immutable, append-only, and retained for 8 years to satisfy MCA Rule 3.</td><td class="priority-high">High</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 3. DELIVERABLES BY MILESTONE -->
+  <div class="section">
+    <div class="section-num">Section 3</div>
+    <h2>Deliverables by Milestone</h2>
+
+    <div class="milestone">
+      <div class="milestone-header">
+        <div class="milestone-title">Kickoff and Foundation</div>
+        <div class="milestone-tag">Week 1</div>
+      </div>
+      <div class="milestone-meta">
+        <div>Phase payment: <strong>50% of setup at signature</strong></div>
+        <div>Duration: <strong>5 working days</strong></div>
+      </div>
+      <ul class="deliverables">
+        <li>Server provisioning, environment setup, and a private staging URL for the Aravali Studio instance</li>
+        <li>Ingestion of standard documents (Profile, Scope of Work, Estimated Cost), voice-matching against 5 historical approved proposals supplied by Aravali Studio</li>
+        <li>Rate library import with versioning enabled and GST/SAC/HSN tagging applied at the item level</li>
+        <li>Subdomain configuration for proposal URLs (e.g., proposal.aravali.studio)</li>
+        <li>Brand-system review: palette, typography, photography style, signer photograph</li>
+      </ul>
+      <div class="acceptance">
+        <div class="acceptance-label">Acceptance Criteria</div>
+        <ul>
+          <li>Three standard documents ingested and confirmed in writing by Aravali Studio within 5 business days of sharing</li>
+          <li>Rate library imported with first sample line items reproduced within 5% variance of a historical example</li>
+          <li>Staging URL live and accessible to Aravali Studio's nominated reviewers (3 named users)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="milestone">
+      <div class="milestone-header">
+        <div class="milestone-title">Build - Proposal Engine, Showcase Output and Sign-Off Portal</div>
+        <div class="milestone-tag">Weeks 2 to 4</div>
+      </div>
+      <div class="milestone-meta">
+        <div>Phase payment: <strong>25% at kickoff (Day 1, Week 1)</strong></div>
+        <div>Duration: <strong>3 calendar weeks</strong></div>
+      </div>
+      <ul class="deliverables">
+        <li>AI Proposal Drafting engine (US-01 to US-05) wired to the rate library and template ingestion outputs</li>
+        <li>Natural-language chat editor (US-06 to US-09) with visible diff and rollback</li>
+        <li>Showcase Gallery output: cinematic per-client mini-website + one-click PDF export + in-page "Call Anjali" CTA</li>
+        <li>Client Sign-Off Portal with per-section approval and timestamped audit log (US-12)</li>
+        <li>WhatsApp Cloud API integration on approved send (US-13)</li>
+      </ul>
+      <div class="acceptance">
+        <div class="acceptance-label">Acceptance Criteria</div>
+        <ul>
+          <li>End-to-end demo on a fresh client brief: draft generated in under 90 seconds, edited via 3 chat turns, signed off, sent to a test WhatsApp number</li>
+          <li>One-click PDF export rendered correctly on Adobe Acrobat Reader DC</li>
+          <li>Sign-off Portal partial-approval flow exercised by 2 named reviewers</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="milestone">
+      <div class="milestone-header">
+        <div class="milestone-title">Build - Studio Operations, Site Drops, Moodboard, BOQ and Cashflow</div>
+        <div class="milestone-tag">Weeks 5 to 8</div>
+      </div>
+      <div class="milestone-meta">
+        <div>Phase payment: <strong>covered under signature + kickoff installments</strong></div>
+        <div>Duration: <strong>4 calendar weeks</strong></div>
+      </div>
+      <ul class="deliverables">
+        <li>Site-Visit Voice Drop with auto-transcribe and project tagging (US-14)</li>
+        <li>3D Moodboard Pinboard with drag-and-drop from Pinterest/Instagram/local (US-15)</li>
+        <li>WhatsApp team surface replacing 2pm and 4pm standups (US-16)</li>
+        <li>BOQ Engine with versioned rate library, revision diff view</li>
+        <li>Milestone Payment Tracker and Project Cashflow Rollup (per project and studio-wide)</li>
+        <li>Contractor Payment Dashboard with WhatsApp-native confirmations (US-17)</li>
+        <li>GST-aware invoicing with SAC/HSN combinations ready for the CA</li>
+      </ul>
+      <div class="acceptance">
+        <div class="acceptance-label">Acceptance Criteria</div>
+        <ul>
+          <li>A live project from Aravali Studio's portfolio operates end-to-end through the system for 5 consecutive working days</li>
+          <li>Revision diff view shown on a real BOQ v3 to v4 change</li>
+          <li>Two contractor payment confirmations sent via WhatsApp and acknowledged</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="milestone">
+      <div class="milestone-header">
+        <div class="milestone-title">Hypercare and Pune Onsite</div>
+        <div class="milestone-tag">Weeks 9 to 12</div>
+      </div>
+      <div class="milestone-meta">
+        <div>Phase payment: <strong>final 25% on go-live</strong></div>
+        <div>Duration: <strong>30 days, includes 2-day Pune onsite</strong></div>
+      </div>
+      <ul class="deliverables">
+        <li>Hindi, Marathi and English screen-by-screen training videos delivered as a shared playlist</li>
+        <li>2-day onsite in Aravali Studio's Koregaon Park office: full team walkthrough, role-specific deep dives, live-issue resolution</li>
+        <li>Daily check-in for 30 days with Aravali Studio's nominated operations contact</li>
+        <li>L2 issue resolution with same-business-day acknowledgement and 48-hour fix SLA on Severity 1 issues</li>
+        <li>Weekly Excel export to Aravali Studio's Google Drive verified for the first 4 weeks</li>
+        <li>Audit trail compliance check for MCA Rule 3 (tamper-proof, 8-year retention, append-only verified)</li>
+      </ul>
+      <div class="acceptance">
+        <div class="acceptance-label">Acceptance Criteria</div>
+        <ul>
+          <li>Aravali Studio signs the Go-Live Acceptance Note after the 2-day onsite</li>
+          <li>4 consecutive weeks of automated Google Drive exports without manual intervention</li>
+          <li>Zero Severity 1 issues open at the end of the 30-day hypercare</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="milestone">
+      <div class="milestone-header">
+        <div class="milestone-title">Steady-State Support Retainer</div>
+        <div class="milestone-tag">Month 1 onward</div>
+      </div>
+      <div class="milestone-meta">
+        <div>Recurring: <strong>&#8377;18,000 / month + 18% GST</strong></div>
+        <div>Commences per Section 5.5</div>
+      </div>
+      <ul class="deliverables">
+        <li>Hosting on managed cloud infrastructure procured by Jarvis Daily on Aravali Studio's behalf</li>
+        <li>AI model API budget covering up to 80 proposal drafts per month and unlimited chat edits within fair-use</li>
+        <li>L2 incident response: Severity 1 within 4 business hours, Severity 2 within 1 business day</li>
+        <li>Quarterly feature upkeep window (16 hours of engineering time, rolled into the quarter; cumulative unused hours expire at quarter end)</li>
+        <li>Audit trail compliance attestation issued every 6 months</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 4. TIMELINE -->
+  <div class="section">
+    <div class="section-num">Section 4</div>
+    <h2>Timeline</h2>
+    <p>Total build duration is <strong>10 to 12 calendar weeks</strong> from kickoff to go-live, plus a 30-day hypercare window before steady-state retainer commences. Indicative breakdown below.</p>
+    <div class="timeline-bar">
+      <div class="timeline-segment seg-1">W1 KICKOFF</div>
+      <div class="timeline-segment seg-2">W2 - 4 BUILD A</div>
+      <div class="timeline-segment seg-3">W5 - 8 BUILD B</div>
+      <div class="timeline-segment seg-4">W9 - 12 HYPERCARE</div>
+    </div>
+    <p style="font-size: 12px; color: #666; margin-top: 0.5rem;">Build A: Proposal Engine + Showcase Output + Sign-Off Portal. Build B: BOQ + Cashflow + WhatsApp team surface + Site-Visit Voice Drop + Moodboard + Contractor Dashboard.</p>
+    <div class="note-card">
+      <strong>Calendar anchor.</strong>
+      <p>Build duration is anchored to the kickoff date (counted in calendar weeks). Where Aravali Studio's sign-offs, content delivery or credential handovers run past schedule, any continuing build work is carried out under the Change Request Process in Section 11. Where the extension is attributable to Jarvis Daily or to Force Majeure under Section 11, the go-live date moves on a day-for-day basis.</p>
+    </div>
+  </div>
+
+  <!-- 5. INVESTMENT AND PAYMENT SCHEDULE -->
+  <div class="section">
+    <div class="section-num">Section 5</div>
+    <h2>Investment and Payment Schedule</h2>
+
+    <h3>5.1 Setup Investment</h3>
+    <p>Studio Command Centre (full build): <strong>&#8377;6,50,000 + 18% GST</strong> (one-time). Inclusive of all training videos, the 2-day Pune onsite, and the 30-day hypercare. Where Aravali Studio's books prefer a single capex line, the Command Centre Prepaid option is <strong>&#8377;7,80,000 + 18% GST</strong> (one-time) covering setup and the first 12 months of retainer; Year 2 renewal at <strong>&#8377;2,00,000 / year + 18% GST</strong> as Compliance, Hosting and Continuity.</p>
+
+    <h3>5.2 Setup Line-Item Breakdown</h3>
+    <table>
+      <thead><tr><th>Line Item</th><th style="text-align: right;">Amount (INR)</th></tr></thead>
+      <tbody>
+        <tr><td>Discovery, design system, and audit-trail spine</td><td style="text-align: right;">1,40,000</td></tr>
+        <tr><td>Proposal Engine + Showcase Output + Sign-Off Portal (full build)</td><td style="text-align: right;">3,30,000</td></tr>
+        <tr><td>WhatsApp team surface + contractor dashboard + Site-Visit Voice Drop + Moodboard</td><td style="text-align: right;">1,00,000</td></tr>
+        <tr><td>Hindi/Marathi/English training videos + 30-day hypercare + 2-day Pune onsite</td><td style="text-align: right;">80,000</td></tr>
+        <tr style="background:#FBF7EE; font-weight: 700;"><td>Setup Total</td><td style="text-align: right;">6,50,000</td></tr>
+      </tbody>
+    </table>
+
+    <h3>5.3 Payment Schedule (Command Centre)</h3>
+    <div class="payment-grid">
+      <div class="payment-card active">
+        <div class="payment-pct">50%</div>
+        <div class="payment-amt">&#8377;3,25,000</div>
+        <div class="payment-gst">+ 18% GST</div>
+        <div class="payment-when">On signature of this SOW</div>
+      </div>
+      <div class="payment-card">
+        <div class="payment-pct">25%</div>
+        <div class="payment-amt">&#8377;1,62,500</div>
+        <div class="payment-gst">+ 18% GST</div>
+        <div class="payment-when">On kickoff (Day 1, Week 1)</div>
+      </div>
+      <div class="payment-card">
+        <div class="payment-pct">25%</div>
+        <div class="payment-amt">&#8377;1,62,500</div>
+        <div class="payment-gst">+ 18% GST</div>
+        <div class="payment-when">On go-live (end of hypercare)</div>
+      </div>
+      <div class="payment-card">
+        <div class="payment-pct">RETAINER</div>
+        <div class="payment-amt">&#8377;18,000 / mo</div>
+        <div class="payment-gst">+ 18% GST</div>
+        <div class="payment-when">Commences per Section 5.5</div>
+      </div>
+    </div>
+    <p style="font-size: 12px; color: #666;">Payment schedule sum (50% + 25% + 25%) = &#8377;6,50,000, matching Section 5.1.</p>
+
+    <h3>5.4 Command Centre Prepaid Payment Schedule</h3>
+    <div class="payment-grid">
+      <div class="payment-card active">
+        <div class="payment-pct">50%</div>
+        <div class="payment-amt">&#8377;3,90,000</div>
+        <div class="payment-gst">+ 18% GST</div>
+        <div class="payment-when">On signature of this SOW</div>
+      </div>
+      <div class="payment-card">
+        <div class="payment-pct">50%</div>
+        <div class="payment-amt">&#8377;3,90,000</div>
+        <div class="payment-gst">+ 18% GST</div>
+        <div class="payment-when">On kickoff (Day 1, Week 1)</div>
+      </div>
+      <div class="payment-card">
+        <div class="payment-pct">RETAINER</div>
+        <div class="payment-amt">Bundled</div>
+        <div class="payment-gst">Year 1</div>
+        <div class="payment-when">No monthly invoice for 12 months from go-live</div>
+      </div>
+      <div class="payment-card">
+        <div class="payment-pct">Y2</div>
+        <div class="payment-amt">&#8377;2,00,000 / yr</div>
+        <div class="payment-gst">+ 18% GST</div>
+        <div class="payment-when">Compliance, Hosting and Continuity, year 2 onward</div>
+      </div>
+    </div>
+    <p style="font-size: 12px; color: #666;">Payment schedule sum (50% + 50%) = &#8377;7,80,000, matching Section 5.1 Prepaid figure.</p>
+
+    <h3>5.5 Retainer Commencement</h3>
+    <p>The monthly retainer commences on the earlier of (a) the calendar month in which go-live or final handover is achieved, or (b) the calendar month falling 10 weeks after the kickoff date. This dual-trigger is standard for managed-platform engagements and gives both sides a clear, calendar-anchored start to the steady-state support cycle. Where joint readiness checkpoints, configuration handovers, or sign-off cycles run past date (b), any continuing build work is carried out under the Change Request Process in Section 11 and date (b) remains the retainer-start date. Where the extension is attributable to Jarvis Daily or to Force Majeure under Section 11, date (b) moves on a day-for-day basis.</p>
+  </div>
+
+  <!-- 6. SLAs and SUPPORT -->
+  <div class="section">
+    <div class="section-num">Section 6</div>
+    <h2>SLAs and Support</h2>
+    <table>
+      <thead><tr><th>Severity</th><th>Definition</th><th>Acknowledgement</th><th>Resolution Target</th></tr></thead>
+      <tbody>
+        <tr><td><strong>S1 (Critical)</strong></td><td>System fully unavailable; no proposals can be drafted, edited or sent</td><td>1 business hour</td><td>4 business hours</td></tr>
+        <tr><td><strong>S2 (High)</strong></td><td>A core module unavailable but workaround exists; degraded performance on multiple workflows</td><td>2 business hours</td><td>1 business day</td></tr>
+        <tr><td><strong>S3 (Medium)</strong></td><td>Minor feature broken; single-workflow degradation; non-blocking</td><td>1 business day</td><td>5 business days</td></tr>
+        <tr><td><strong>S4 (Low)</strong></td><td>Cosmetic or enhancement request</td><td>2 business days</td><td>Quarterly cycle</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size: 12px; color: #666; margin-top: 0.5rem;">Business hours are 09:30 to 18:30 IST, Monday to Saturday excluding declared Indian public holidays. Severity classification is at Jarvis Daily's reasonable judgement; the Client may escalate to the named SOW signer for re-classification.</p>
+  </div>
+
+  <!-- 7. COMPLIANCE REPRESENTATION -->
+  <div class="section">
+    <div class="section-num">Section 7</div>
+    <h2>Compliance Representation</h2>
+    <p>Aravali Studio is responsible for the legality, taxation correctness and professional standards of every proposal sent through the system. Jarvis Daily is a software vendor and does not assume regulatory liability for the architectural advice contained within client proposals.</p>
+    <ul>
+      <li><strong>MCA Rule 3 audit trail.</strong> The Studio Command Centre maintains an immutable, append-only audit trail of every BOQ, proposal and payment record, retained for 8 years. The audit trail satisfies MCA Rule 3 of the Companies Amendment Rules 2022 for entities using accounting-software-adjacent systems.</li>
+      <li><strong>GST and SAC/HSN.</strong> The Studio Command Centre's rate library supports GST tagging at the line-item level. SAC 998391 is applied to design services, SAC 9954 to site execution services, and HSN 9403 to furniture line items. Aravali Studio's CA remains the final authority on tax classification.</li>
+      <li><strong>IT Act 2000.</strong> Digital signatures collected through the Client Sign-Off Portal are legally valid under Section 5 of the Information Technology Act 2000 and its 2008 amendment.</li>
+      <li><strong>DPDP Act 2023.</strong> Aravali Studio's clients are treated as Data Principals. The system supports access, correction and erasure requests via the admin panel.</li>
+    </ul>
+  </div>
+
+  <!-- 8. SOFTWARE VENDOR FRAMING -->
+  <div class="section">
+    <div class="section-num">Section 8</div>
+    <h2>Software Vendor Framing</h2>
+    <p>Jarvis Daily provides software-as-a-service and configuration services. Jarvis Daily is not a regulated entity under the Architects Act 1972, is not a member of the Council of Architecture, and does not provide architectural, engineering or regulatory advisory services. Aravali Studio retains full and sole responsibility for the architectural recommendations, project costs, drawings and signing-architect representations made through any artifact produced via the Studio Command Centre.</p>
+  </div>
+
+  <!-- 9. INDEMNIFICATION -->
+  <div class="section">
+    <div class="section-num">Section 9</div>
+    <h2>Indemnification</h2>
+    <p>Each party shall indemnify the other against third-party claims arising directly from its own gross negligence, wilful misconduct or breach of this SOW. Aravali Studio shall indemnify Jarvis Daily against claims arising from the substance of architectural advice, drawings, BOQ accuracy, contractor disputes or any regulatory action against Aravali Studio. Jarvis Daily shall indemnify Aravali Studio against claims arising from infringement by the Platform of third-party intellectual property rights.</p>
+  </div>
+
+  <!-- 10. LIABILITY CAP -->
+  <div class="section">
+    <div class="section-num">Section 10</div>
+    <h2>Liability Cap</h2>
+    <p>To the maximum extent permitted by applicable Indian law, the aggregate liability of either party arising out of or related to this SOW shall be limited to the fees actually paid by Aravali Studio to Jarvis Daily in the six (6) months immediately preceding the event giving rise to the claim. Neither party shall be liable for any indirect, consequential, incidental, punitive, special or exemplary damages, lost profits, lost revenue, or business interruption. This cap does not apply to liabilities arising under Section 9 (Indemnification) or to a party's confidentiality obligations.</p>
+  </div>
+
+  <!-- 11. TERMINATION AND CHANGE REQUESTS -->
+  <div class="section">
+    <div class="section-num">Section 11</div>
+    <h2>Termination, Change Requests and Force Majeure</h2>
+    <h3>11.1 Termination for Convenience</h3>
+    <p>Either party may terminate this SOW with thirty (30) days' written notice. On termination, Aravali Studio shall pay for all work completed up to the date of termination and Jarvis Daily shall deliver a final data export within 7 business days.</p>
+    <h3>11.2 Change Request Process</h3>
+    <p>Any out-of-scope work is documented in a written change request, sized in engineering hours by Jarvis Daily, and signed off by Aravali Studio's nominated authoriser before work begins. Change requests are billed at <strong>&#8377;3,000 per engineering hour + 18% GST</strong>.</p>
+    <h3>11.3 Force Majeure</h3>
+    <p>Neither party shall be liable for delays caused by acts of God, war, terrorism, civil unrest, government action, pandemic, or other events beyond reasonable control. Where Force Majeure extends the build, the retainer-commencement backstop date in Section 5.5 moves on a day-for-day basis.</p>
+  </div>
+
+  <!-- 12. CONFIDENTIALITY -->
+  <div class="section">
+    <div class="section-num">Section 12</div>
+    <h2>Confidentiality</h2>
+    <p>Each party shall treat the other party's non-public information as confidential and shall use such information solely for the purposes of this SOW. Aravali Studio's client lists, rate library, BOQs, and project records are treated as Highly Confidential. Jarvis Daily's source code, system prompts, agent architectures and workflow specifications are treated as Highly Confidential. The confidentiality obligation survives termination of this SOW for a period of three (3) years.</p>
+  </div>
+
+  <!-- 13. DATA OWNERSHIP AND IP -->
+  <div class="section">
+    <div class="section-num">Section 13</div>
+    <h2>Data Ownership and Intellectual Property</h2>
+
+    <div class="ip-block">
+      <h3>Data Ownership</h3>
+      <p>Aravali Studio owns all client data, BOQ revisions, proposals, payment records, audit log entries and conversation transcripts processed through the Studio Command Centre. Aravali Studio retains full access and export rights at any time during the engagement and for 30 days after termination. All Aravali Studio-account logins and passwords for the administrative panel will be handed over to Aravali Studio's nominated team on go-live. Jarvis Daily will not use Aravali Studio data for any purpose other than delivering the services under this SOW.</p>
+    </div>
+
+    <div class="ip-block">
+      <h3>Intellectual Property</h3>
+      <p>The Jarvis Daily Studio Command Centre Platform (including its API, source code, system prompts, workflows, agent architectures, and underlying infrastructure) is a pre-existing product owned by Tranquil Veda Private Limited. Under this SOW, Aravali Studio is licensing a configured instance of the Platform for the duration of the engagement, and nothing in this engagement transfers ownership of the Platform to Aravali Studio or constitutes a work-for-hire arrangement under Section 17 of the Copyright Act 1957.</p>
+    </div>
+
+    <div class="ip-block">
+      <h3>Third-Party Service Providers</h3>
+      <p>The service is delivered using reputable third-party providers (AI model provider, WhatsApp Business platform, cloud hosting, e-signature service). Each operates under its own terms and retains records per its own policies and applicable law. Jarvis Daily selects responsible providers but does not warrant third-party conduct or uptime. Jarvis Daily's total liability for sub-processor incidents is capped at fees paid in the preceding three months.</p>
+    </div>
+  </div>
+
+  <!-- 14. SIGNATORIES -->
+  <div class="section">
+    <div class="section-num">Section 14</div>
+    <h2>Signatories</h2>
+    <p>This Statement of Work is executed on behalf of the parties below. Digital signatures executed via WhatsApp-shared PDF or zoho-signed link are accepted as legally valid under the Information Technology Act, 2000.</p>
+
+    <div class="sig-grid">
+      <div class="sig-block">
+        <div class="sig-label">For the Service Provider</div>
+        <div class="sig-name">Shruti</div>
+        <div class="sig-detail">
+          Principal Consultant<br>
+          Jarvis Daily, a unit of<br>
+          Tranquil Veda Private Limited<br>
+          shruti@jarvisdaily.com<br>
+          +91 9673758777<br>
+          GSTIN 27AAHCT6956C1Z3
+        </div>
+        <div class="sig-line">Signature / Date</div>
+      </div>
+      <div class="sig-block">
+        <div class="sig-label">For the Client</div>
+        <div class="sig-name">Ar. Anjali Mehra</div>
+        <div class="sig-detail">
+          Principal Architect<br>
+          Aravali Studio Architects Pvt. Ltd.<br>
+          Koregaon Park Studio, Pune<br>
+          [Client Email]<br>
+          [Client Phone]
+        </div>
+        <div class="sig-line">Signature / Date</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Tranquil Veda Private Limited - GSTIN 27AAHCT6956C1Z3 - Pune, Maharashtra - hello@jarvisdaily.com<br>
+    This Statement of Work is confidential and prepared exclusively for Aravali Studio Architects.
+  </div>
+
+</div>
+</body>
+</html>
